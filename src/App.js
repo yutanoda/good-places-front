@@ -1,8 +1,8 @@
-import './App.css';
+import classes from './App.css';
 
 function App() {
   return (
-    <div>
+    <div className={classes.Content}>
       hello 何でほな
     </div>
   );
