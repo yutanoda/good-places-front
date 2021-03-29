@@ -1,11 +1,15 @@
-import classes from './App.css';
+import React, { Component } from 'react';
+import Layout from './hoc/Layout/Layout';
 
-function App() {
-  return (
-    <div className={classes.Content}>
-      hello 何でほな
-    </div>
-  );
+class App extends Component {
+
+  render() {
+    return (
+      <div>
+        <Layout></Layout>
+      </div>
+    );
+  }
 }
 
 export default App;
