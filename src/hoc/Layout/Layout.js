@@ -5,7 +5,9 @@ class Layout extends Component {
   render () {
     return (
       <Aux>
-        aa
+        <header></header>
+        <main></main>
+        <footer></footer>
       </Aux>
     )
   }
