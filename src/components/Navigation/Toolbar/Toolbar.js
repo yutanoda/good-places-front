@@ -3,9 +3,9 @@ import classes from './Toolbar.css';
 import NavigationItems from '../NavigationItems/NavigationItems';
 
 const toolbar = (props) => (
-  <header>
+  <header className={classes.Toolbar}>
     <div>
-
+      Logo
     </div>
     <nav>
       <NavigationItems />
@@ -13,4 +13,4 @@ const toolbar = (props) => (
   </header>
 )
 
-export default toolbat;
+export default toolbar;
