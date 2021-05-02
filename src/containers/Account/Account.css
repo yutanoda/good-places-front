@@ -79,6 +79,10 @@
   font-size: 3vh;
 }
 
+.MenuIcon {
+  margin-right: 10px;
+}
+
 .MenuLink {
   text-decoration: none;
   color: #000000;
@@ -105,4 +109,13 @@
 .NewButtonLink {
   text-decoration: none;
   color: white;
+}
+
+.IconContainer {
+  text-align: center;
+}
+
+.Icon {
+  margin-left: 3%;
+  margin-right: 3%;
 }
