@@ -1,0 +1,108 @@
+.Container {
+  padding-top: 50px;
+}
+
+.Profile {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  width: 70vw;
+  background-color: white;
+  box-shadow: 7px 7px 8px hsl(0deg 0% 67% / 40%);
+  box-sizing: border-box;
+}
+
+.Photo {
+  height: 24vh;
+  width: 24vh;
+  margin-right: 5vh;
+  background-color: black;
+}
+
+.PhotoContent {
+  height: 100%;
+  width: 100%;
+}
+
+.ProfileInfo {
+  margin-left: 5vh;
+  height: 24vh;
+}
+
+
+.AccountName {
+  margin-top: 2vh;
+  font-size: 4vh;
+}
+
+.SecondInfo {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: flex-start;
+  padding: 0;
+  list-style: none;
+  font-size: 3vh;
+}
+
+.Num {
+  padding-left: 1vh;
+  padding-right: 5vh;
+}
+
+.EditButton {
+  font-size: 3vh;
+  height: 5vh;
+  width: 5.5vw;
+  border-radius: 2.5vh;
+  border: solid 1px black;
+  background-color: white;
+}
+
+.MenuContainer {
+  padding-top: 40px;
+  height: 100vh;
+ }
+
+.MenuBar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.MenuList {
+  margin: 0 50px 0 50px;
+  font-size: 3vh;
+}
+
+.MenuLink {
+  text-decoration: none;
+  color: #000000;
+}
+
+.NewButtonContainer {
+  text-align: right;
+  padding: 2% 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.NewButton {
+  background-color: hsl(210, 100%, 50%);
+  width: 110px;
+  text-align: center;
+  height: 6vh;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 3vh;
+  font-size: 20px;
+}
+
+.NewButtonLink {
+  text-decoration: none;
+  color: white;
+}

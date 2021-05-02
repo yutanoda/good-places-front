@@ -1,20 +1,20 @@
 import React from 'react';
 import classes from './RegisterBtn.css';
+import { Link } from 'react-router-dom';
 
 const registerBtn = () => (
-  <div className={classes.Container}>
-    <a className={classes.Banner}>
+
+    <Link className={classes.Container} to='/'>
       <div className={classes.Content}>
           <div className={classes.Title}>
-         
             <p className={classes.Title1}>NOT FAMILIAR WIRH THE LOCAL ?</p>
-            <p className={classes.Title2}>FIND SOMEWHERE TO GO!</p>
+            <p className={classes.Title2}>FIND SOMEWHERE TO GO</p>
           </div>
-          <p className={classes.Description}>Share some places definitely to visit</p>
-          <button className={classes.Button}>JOIN NOW</button>
+          <p className={classes.Description}>Share some spots definitely to visit</p>
+          <div className={classes.Button}>JOIN NOW</div>
       </div>
-    </a>
-  </div>
+    </Link>
+
 );
 
 export default registerBtn;
