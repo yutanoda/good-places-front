@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/Aux/Aux';
 import classes from './Home.css';
-import RegisterBtn from '../../components/UI/RegisterBtn/RegisterBtn';
+import JoinBtn from '../../components/UI/JoinBtn/JoinBtn';
 
 
 class Home extends Component {
@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <Aux>
         <div className={classes.Container}>
-          <RegisterBtn />
+          <JoinBtn />
           <div className={classes.SubContent}>
             <div className={classes.Box1}>
               <div className={classes.Box1Content}>

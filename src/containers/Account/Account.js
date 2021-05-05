@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/Aux/Aux';
-import Input from '../../components/UI/Input/Input';
+import Input from '../../components/UI/ProfileInput/ProfileInput';
 import SaveBtn from '../../components/UI/SaveBtn/SaveBtn';
 import { Link } from 'react-router-dom'
 import classes from './Account.css';

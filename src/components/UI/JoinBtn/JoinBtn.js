@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './RegisterBtn.css';
+import classes from './JoinBtn.css';
 import { Link } from 'react-router-dom';
 
-const registerBtn = () => (
+const joinBtn = () => (
 
-    <Link className={classes.Container} to='/'>
+    <Link className={classes.Container} to='/signup'>
       <div className={classes.Content}>
           <div className={classes.Title}>
             <p className={classes.Title1}>NOT FAMILIAR WIRH THE LOCAL ?</p>
@@ -17,5 +17,5 @@ const registerBtn = () => (
 
 );
 
-export default registerBtn;
+export default joinBtn;
 
