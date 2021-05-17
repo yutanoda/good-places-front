@@ -6,21 +6,21 @@ const authInput = (props) => {
   let inputElement = null;
   switch (props.elementType) {
     case ('input'):
-      inputElement = <input className={classes.inputElement} />
+      inputElement = <input 
+        className={classes.Input} 
+        onChange={props.changed}
+        {...props.elementConfig} />;
       break;
 
     default:
-      inputElement = <input />
+      inputElement = <input  />
   }
 
   return (
     <Aux>
       <label className={classes.Label}>{props.label}</label>
       <div className={classes.FormContainer}>
-        <input 
-          className={classes.Input} 
-          onChange={(event) => this.inputChangedHandler(event)}
-        />
+        {inputElement}
       </div>
     </Aux>
   )

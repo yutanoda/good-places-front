@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/Aux/Aux';
 import classes from './Home.css';
-import JoinBtn from '../../components/UI/JoinBtn/JoinBtn';
+import JoinBtn from '../../components/UI/Btn/JoinBtn/JoinBtn';
 
 
 class Home extends Component {
