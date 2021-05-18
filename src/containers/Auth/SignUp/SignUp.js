@@ -86,13 +86,10 @@ class SignUp extends Component {
 
     const url = 'http://localhost:3000/api/v1/users/sign_up';
 
-    console.log(formData)
-
     axios.post(url, formData)
       .then( response => {
-        
         if (response.data.id && response.data.token) {
-
+          //name password
           const updatedNameFormElement = updateObject(this.state.inputForm['name'], {
             show: false
           });
@@ -112,7 +109,7 @@ class SignUp extends Component {
           this.setState({inputForm: updatedInputForm , token: response.data.token});
 
         } else if (response.data.code) {
-
+          //code
           const updatedCodeFormElement = updateObject(this.state.inputForm['code'], {
             show: false
           });
@@ -134,25 +131,30 @@ class SignUp extends Component {
 
         } else if (response.data.id) {
           //email
-            const updatedEmailFormElement = updateObject(this.state.inputForm['email'], {
-              show: false
-            });
+          const updatedEmailFormElement = updateObject(this.state.inputForm['email'], {
+            show: false
+          });
 
-            const updatedCodeFormElement = updateObject(this.state.inputForm['code'], {
-              show: true
-            });
+          const updatedCodeFormElement = updateObject(this.state.inputForm['code'], {
+            show: true
+          });
 
-            const updatedInputForm = updateObject(this.state.inputForm, {
-              email: updatedEmailFormElement,
-              code: updatedCodeFormElement
-            })
-            localStorage.setItem('userId', response.data.id);
-            this.setState({inputForm: updatedInputForm, userId: response.data.id});
+          const updatedInputForm = updateObject(this.state.inputForm, {
+            email: updatedEmailFormElement,
+            code: updatedCodeFormElement
+          })
+          localStorage.setItem('userId', response.data.id);
+          this.setState({inputForm: updatedInputForm, userId: response.data.id});
+        } else if (response.data.token) {
+          this.setState({token: response.data.token})
+          alert('ページ遷移');
+        } else {
+
         }
       })
       .catch( error => {
         console.log(error);
-      } );
+      });
   }
 
 
@@ -181,8 +183,6 @@ class SignUp extends Component {
         })
       }
     }
-
-    console.log(formElementsArray);
 
     let form = (
       <form onSubmit={this.signUpContinueHandler}>

@@ -8,6 +8,7 @@ const authInput = (props) => {
     case ('input'):
       inputElement = <input 
         className={classes.Input} 
+        value={props.value}
         onChange={props.changed}
         {...props.elementConfig} />;
       break;
